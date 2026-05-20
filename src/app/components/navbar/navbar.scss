@@ -1,0 +1,24 @@
+nav {
+    background-color: #BFC9D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    height: 50px;
+
+    .nav-container {
+        width: 50%;
+
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                margin: 0 5px;
+            }
+        }
+    }
+}
