@@ -1,4 +1,4 @@
-nav {
+header {
     background-color: #BFC9D1;
     display: flex;
     justify-content: center;
@@ -7,7 +7,7 @@ nav {
     position: sticky;
     height: 50px;
 
-    .nav-container {
+    nav {
         width: 50%;
 
         ul {
@@ -18,6 +18,12 @@ nav {
 
             li {
                 margin: 0 5px;
+
+                a {
+                    display: block;
+                    padding: 10px;
+                    text-decoration: none;
+                }
             }
         }
     }
