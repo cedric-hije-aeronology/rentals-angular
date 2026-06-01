@@ -4,4 +4,14 @@
     margin: 10px;
     border-radius: 5px;
     color: #BFC9D1;
+    height: 175px;
+    overflow: auto;
+    
+    p {
+        margin-bottom: 5px;
+
+        .label {
+            color: #FF9B51;
+        }
+    }
 }

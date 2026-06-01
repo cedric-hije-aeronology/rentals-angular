@@ -1,7 +1,7 @@
 <div class="rental-card">
-    <p>Monthly: {{ rental()?.monthly }}</p>
-    <p>Location: {{ `${rental()?.city}, ${rental()?.province}` }}</p>
-    <p>Address: {{ rental()?.address }}</p>
-    <p>Barangay: {{ rental()?.barangay }}</p>
-    <p>Description: {{ rental()?.description }}</p>
+    <p><span class="label">Monthly</span>: {{ rental()?.monthly }}</p>
+    <p><span class="label">Location</span>: {{ `${rental()?.city}, ${rental()?.province}` }}</p>
+    <p><span class="label">Address</span>: {{ rental()?.address }}</p>
+    <p><span class="label">Barangay</span>: {{ rental()?.barangay }}</p>
+    <p><span class="label">Description</span>: {{ rental()?.description }}</p>
 </div>
