@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --font-main: "Roboto", sans-serif;
+    --color-primary: #25343F;
+    --color-secondary: #BFC9D1;
+    --color-accent: #FF9B51;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,6 +14,6 @@
 }
 
 body {
-    background-color: #25343F;
-    font-family: "Roboto", sans-serif;
+    background-color: var(--color-primary);
+    font-family: var(--font-main);
 }

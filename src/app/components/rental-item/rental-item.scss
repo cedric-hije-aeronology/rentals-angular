@@ -1,9 +1,9 @@
 .rental-card {
-    border: 1px solid #BFC9D1;
+    border: 1px solid var(--color-secondary);
     padding: 15px;
     margin: 10px;
     border-radius: 5px;
-    color: #BFC9D1;
+    color: var(--color-secondary);
     height: 175px;
     overflow: auto;
     
@@ -11,7 +11,7 @@
         margin-bottom: 5px;
 
         .label {
-            color: #FF9B51;
+            color: var(--color-accent);
         }
     }
 }
