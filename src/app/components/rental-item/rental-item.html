@@ -1,7 +1,16 @@
 <div class="rental-card">
-    <p><span class="label">Monthly</span>: {{ rental()?.monthly }}</p>
-    <p><span class="label">Location</span>: {{ `${rental()?.city}, ${rental()?.province}` }}</p>
-    <p><span class="label">Address</span>: {{ rental()?.address }}</p>
-    <p><span class="label">Barangay</span>: {{ rental()?.barangay }}</p>
-    <p><span class="label">Description</span>: {{ rental()?.description }}</p>
+    <p><span class="label">Monthly</span>: {{ rental().monthly }}</p>
+    <p><span class="label">Location</span>: {{ `${rental().city}, ${rental().province}` }}</p>
+    <p><span class="label">Address</span>: {{ rental().address }}</p>
+    <p><span class="label">Barangay</span>: {{ rental().barangay }}</p>
+    <p><span class="label">Description</span>: {{ rental().description }}</p>
+    <div class="rental-btns">
+        <button class="rental-btn del" (click)="onDelete()">Delete</button>
+
+        @if (rental().isSaved) {
+            <button class="rental-btn unsave">Unsave</button>
+        } @else {
+            <button class="rental-btn save">Save</button>
+        }
+    </div>
 </div>

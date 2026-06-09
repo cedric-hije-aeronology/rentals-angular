@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RentalItem } from "../../components/rental-item/rental-item";
 import { RentalService } from '../../services/rental/rental-service';
 import { toSignal } from '@angular/core/rxjs-interop';
@@ -12,9 +12,18 @@ import { toSignal } from '@angular/core/rxjs-interop';
 export class Home {
   private rentalService = inject(RentalService);
 
-  rentals = toSignal(
-    this.rentalService.getRentals(),
-    { initialValue : []}
-  )
+  rentals = signal<Rental[]>([])
+  
+  constructor() {
+    this.rentalService.getRentals().subscribe(data => {
+      this.rentals.set(data);
+    });
+  }
+
+  deleteRental(id : number) {
+    this.rentals.update(items => 
+      items.filter(item => item.id !== id)
+    )
+  }
 
 }

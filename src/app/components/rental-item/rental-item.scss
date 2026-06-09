@@ -4,14 +4,45 @@
     margin: 10px;
     border-radius: 5px;
     color: var(--color-secondary);
-    height: 175px;
+    height: 205px;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     
     p {
         margin-bottom: 5px;
 
         .label {
             color: var(--color-accent);
+        }
+    }
+
+    .rental-btns {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: 400;
+
+        .rental-btn {
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100px;
+            color: white;
+        }
+
+        .del {
+            background-color: red;
+        }
+
+        .save {
+            background-color: blue;
+        }
+
+        .unsave {
+            background-color: yellow;
         }
     }
 }

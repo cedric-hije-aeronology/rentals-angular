@@ -5,5 +5,6 @@ type Rental = {
     barangay: string,
     city: string,
     province: string,
-    description: string
+    description: string,
+    isSaved: boolean
 }
