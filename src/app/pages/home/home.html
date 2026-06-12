@@ -1,7 +1,7 @@
 <section class="home">
     <div class="rentals">
         @for (rental of rentals(); track rental.id) {
-            <app-rental-item [rental]="rental" (delete)="deleteRental(rental.id)" />
+            <app-rental-item [rental]="rental" (save)="saveRental(rental)" (delete)="deleteRental(rental.id)" />
         }
     </div>
 </section>

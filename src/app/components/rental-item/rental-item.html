@@ -8,9 +8,9 @@
         <button class="rental-btn del" (click)="onDelete()">Delete</button>
 
         @if (rental().isSaved) {
-            <button class="rental-btn unsave">Unsave</button>
+            <button class="rental-btn unsave" (click)="onSave()">Unsave</button>
         } @else {
-            <button class="rental-btn save">Save</button>
+            <button class="rental-btn save" (click)="onSave()">Save</button>
         }
     </div>
 </div>

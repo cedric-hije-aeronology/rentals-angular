@@ -26,4 +26,14 @@ export class Home {
     )
   }
 
+  saveRental(rental : Rental) {
+    this.rentals.update(items =>
+      items.map(item => 
+        item.id == rental.id ? 
+        { ...item, isSaved: !item.isSaved} :
+        item
+      )
+    )
+  }
+
 }
