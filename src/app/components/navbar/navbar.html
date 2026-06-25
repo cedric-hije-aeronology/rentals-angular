@@ -8,5 +8,8 @@
                 <a routerLink="/saved">Saved</a>
             </li>
         </ul>
+        @if (authService.isLoggedIn()) {
+            <button (click)="logout()">Logout</button>
+        }
     </nav>
 </header>
