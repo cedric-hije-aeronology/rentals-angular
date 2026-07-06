@@ -1,0 +1,28 @@
+.login-form {
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    input {
+        display: block;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    button {
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0;
+        width: 100px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+}
